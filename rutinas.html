@@ -22,26 +22,254 @@
     <div class="logo-nombre">
         <img src="images/logo_Rubarán.png" alt="Logotipo de Rubarán Gym">
         <h1>Rubarán Gym</h1>
+
+
     </div>
 
     <nav aria-label="Menú principal">
         <ul>
-            <li><a href="Rubaran.html">Inicio</a></li>
-            <li><a href="Rubaran.html#quienes-somos">Quiénes somos</a></li>
-            <li><a href="#">Rutinas</a></li>
-            <li><a href="#">Tarifas</a></li>
-            <li><a href="#l">Contacto</a></li>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.html#titulo-quienes">Quiénes somos</a></li>
+            <li><a href="rutinas.html" class="activo">Rutinas</a></li>
+            <li><a href="tarifas.html">Tarifas</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
             <li><a href="cartel_inaguracion.html">Inaguración</a></li>
         </ul>
     </nav>
 </header>
 
 
+
+
 <main class="pagina-rutinas container" aria-labelledby="titulo-rutinas">
-    <h1 id="titulo-rutinas">Rutinas</h1>
-<!-- 
-    <p>Consulta nuestras rutinas de entrenamiento adaptadas a diferentes niveles y objetivos.</p>   -->
+
+    <!-- TÍTULO PRINCIPAL -->
+    <h1 id="titulo-rutinas">Rutinas de Entrenamiento</h1>
+
+    <p>Explora nuestras rutinas mensuales, vídeos de técnica y ejercicios por categorías.</p>
+
+
+    <!-- 1. CARRUSEL DE CATEGORÍAS -->
+    <section aria-label="Carrusel de categorías de entrenamiento">
+        <h2 class="text-center">Categorías</h2>
+
+        <div id="carruselCategorias" class="carousel slide" data-ride="carousel" aria-label="Carrusel de categorías">
+            <div class="carousel-inner" role="listbox">
+
+                <!-- FUERZA -->
+                <div class="item active text-center" aria-label="Categoría Fuerza">
+                    <img src="images/ejercicoFuerza.jpg" alt="Ejercicios de fuerza" class="img-responsive center-block">
+                    <h3>Fuerza</h3>
+                    <p>Entrenamientos completos de fuerza</p>
+                    <a href="#seccion-fuerza" class="btn btn-primary" aria-label="Ir a ejercicios de fuerza">Ver ejercicios</a>
+                </div>
+
+                <!-- TREN SUPERIOR -->
+                <div class="item text-center" aria-label="Categoría Tren Superior">
+                    <img src="images/trenSuperior.jpg" alt="Ejercicios de tren superior" class="img-responsive center-block">
+                    <h3>Tren Superior</h3>
+                    <p>Press · Remo · Flexiones</p>
+                    <a href="#seccion-superior" class="btn btn-primary" aria-label="Ir a ejercicios de tren superior">Ver ejercicios</a>
+                </div>
+
+                <!-- TREN INFERIOR -->
+                <div class="item text-center" aria-label="Categoría Tren Inferior">
+                    <img src="images/trenInferior.jpg" alt="Ejercicios de tren inferior" class="img-responsive center-block">
+                    <h3>Tren Inferior</h3>
+                    <p>Sentadilla · Zancadas · Peso muerto</p>
+                    <a href="#seccion-inferior" class="btn btn-primary" aria-label="Ir a ejercicios de tren inferior">Ver ejercicios</a>
+                </div>
+
+                <!-- CARDIO -->
+                <div class="item text-center" aria-label="Categoría Cardio">
+                    <img src="images/cardio.jpg" alt="Ejercicios de cardio" class="img-responsive center-block">
+                    <h3>Cardio</h3>
+                    <p>Cinta · Bici · HIIT</p>
+                    <a href="#seccion-cardio" class="btn btn-primary" aria-label="Ir a ejercicios de cardio">Ver ejercicios</a>
+                </div>
+
+                <!-- ABDOMINALES -->
+                <div class="item text-center" aria-label="Categoría Abdominales">
+                    <img src="images/abdominales.jpg" alt="Ejercicios de abdominales" class="img-responsive center-block">
+                    <h3>Abdominales</h3>
+                    <p>Plancha · Crunch · Elevaciones</p>
+                    <a href="#seccion-abdominales" class="btn btn-primary" aria-label="Ir a ejercicios de abdominales">Ver ejercicios</a>
+                </div>
+
+            </div>
+
+            <!-- CONTROLES ACCESIBLES -->
+            <a class="left carousel-control" href="#carruselCategorias" data-slide="prev" aria-label="Anterior">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            </a>
+            <a class="right carousel-control" href="#carruselCategorias" data-slide="next" aria-label="Siguiente">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            </a>
+        </div>
+    </section>
+
+    <!-- 2. EJERCICIOS POR CATEGORÍAS -->
+    <section class="ejercicios-categorias">
+
+        <h2 class="titulo-ejercicios text-center">Ejercicios por Categorías</h2>
+
+        <div class="contenedor-ejercicios">
+
+            <!-- FUERZA -->
+            <article id="seccion-fuerza" class="tarjeta-ejercicio" aria-labelledby="titulo-fuerza">
+                <h3 id="titulo-fuerza">Ejercicios de Fuerza</h3>
+                <ul>
+                    <li>Press de pecho – 4×8</li>
+                    <li>Remo con mancuernas – 4×10</li>
+                    <li>Sentadilla goblet – 4×8</li>
+                </ul>
+            </article>
+
+            <!-- TREN SUPERIOR -->
+            <article id="seccion-superior" class="tarjeta-ejercicio" aria-labelledby="titulo-superior">
+                <h3 id="titulo-superior">Ejercicios de Tren Superior</h3>
+                <ul>
+                    <li>Flexiones – 3×12</li>
+                    <li>Press con mancuernas – 4×8</li>
+                    <li>Elevaciones laterales – 3×12</li>
+                </ul>
+            </article>
+
+            <!-- TREN INFERIOR -->
+            <article id="seccion-inferior" class="tarjeta-ejercicio" aria-labelledby="titulo-inferior">
+                <h3 id="titulo-inferior">Ejercicios de Tren Inferior</h3>
+                <ul>
+                    <li>Sentadilla – 4×10</li>
+                    <li>Zancadas – 3×12</li>
+                    <li>Peso muerto rumano – 3×10</li>
+                </ul>
+            </article>
+
+            <!-- CARDIO -->
+            <article id="seccion-cardio" class="tarjeta-ejercicio" aria-labelledby="titulo-cardio">
+                <h3 id="titulo-cardio">Ejercicios de Cardio</h3>
+                <ul>
+                    <li>Cinta – 20 min</li>
+                    <li>Bicicleta – 25 min</li>
+                    <li>HIIT – 5 bloques</li>
+                </ul>
+            </article>
+
+            <!-- ABDOMINALES -->
+            <article id="seccion-abdominales" class="tarjeta-ejercicio" aria-labelledby="titulo-abdominales">
+                <h3 id="titulo-abdominales">Ejercicios de Abdominales</h3>
+                <ul>
+                    <li>Plancha – 3×30 s</li>
+                    <li>Crunch – 3×15</li>
+                    <li>Elevación de piernas – 3×12</li>
+                </ul>
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- 3. PLAN MENSUAL -->
+    <section id="plan-mensual" aria-label="Plan mensual de entrenamiento">
+        <h2 class="text-center">Plan Mensual</h2>
+
+        <article aria-label="Semana 1 de entrenamiento">
+            <h3>Semana 1 · Adaptación</h3>
+            <ul>
+                <li>Flexiones apoyadas – 3×10</li>
+                <li>Sentadilla sin peso – 3×12</li>
+                <li>Cardio suave – 20 min</li>
+                <li>Plancha – 3×20 s</li>
+            </ul>
+        </article>
+
+        <article aria-label="Semana 2 de entrenamiento">
+            <h3>Semana 2 · Progresión</h3>
+            <ul>
+                <li>Press con mancuernas – 4×8</li>
+                <li>Zancadas – 4×10</li>
+                <li>Cardio moderado – 25 min</li>
+                <li>Crunch – 3×15</li>
+            </ul>
+        </article>
+
+        <article aria-label="Semana 3 de entrenamiento">
+            <h3>Semana 3 · Intensidad</h3>
+            <ul>
+                <li>Remo con mancuernas – 4×8</li>
+                <li>Sentadilla goblet – 4×8</li>
+                <li>Intervalos – 5 bloques</li>
+                <li>Plancha lateral – 3×20 s</li>
+            </ul>
+        </article>
+
+        <article aria-label="Semana 4 de entrenamiento">
+            <h3>Semana 4 · Consolidación</h3>
+            <ul>
+                <li>Press + remo – 3×10</li>
+                <li>Peso muerto rumano – 3×12</li>
+                <li>Cardio continuo – 30 min</li>
+                <li>Estiramientos – 10 min</li>
+            </ul>
+        </article>
+    </section>
+
+    <!-- 4. VÍDEOS DE TÉCNICA -->
+    <section aria-labelledby="titulo-videos">
+        <h2 id="titulo-videos" class="text-center">Vídeos de Técnica</h2>
+
+        <p class="intro-videos">
+            Aprende la técnica correcta de los ejercicios más importantes para entrenar con seguridad.
+        </p>
+
+        <div class="row">
+            <article class="col-sm-6" aria-label="Vídeo técnica sentadilla">
+                <h3>Sentadilla</h3>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item"
+                            src="https://www.youtube.com/embed/4eoYBccwdP8"
+                            title="Técnica de sentadilla"
+                            allowfullscreen></iframe>
+                </div>
+            </article>
+
+            <article class="col-sm-6" aria-label="Vídeo técnica peso muerto">
+                <h3>Peso Muerto</h3>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item"
+                            src="https://www.youtube.com/embed/7BdVi5qJ7E4"
+                            title="Técnica de peso muerto"
+                            allowfullscreen></iframe>
+                </div>
+            </article>
+        </div>
+
+        <div class="row">
+            <article class="col-sm-6" aria-label="Vídeo técnica remo">
+                <h3>Remo con mancuernas</h3>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item"
+                            src="https://www.youtube.com/embed/yno5SR7LPJI"
+                            title="Técnica de remo con mancuernas"
+                            allowfullscreen></iframe>
+                </div>
+            </article>
+
+            <article class="col-sm-6" aria-label="Vídeo técnica plancha">
+                <h3>Plancha abdominal</h3>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item"
+                            src="https://www.youtube.com/embed/5GnLgqGIYOM"
+                            title="Técnica de plancha abdominal"
+                            allowfullscreen></iframe>
+                </div>
+            </article>
+        </div>
+    </section>
+
 </main>
+
 
 
 <footer role="contentinfo" aria-label="Información del pie de página" >
@@ -60,7 +288,7 @@
                 <div class="row">
                     <div class="col-md-6">
                         <a href="index.html">Inicio</a>
-                        <a href="Rubaran.html#quienes-somos">Quiénes somos</a>
+                        <a href="index.html#quienes-somos">Quiénes somos</a>
                         <a href="rutinas.html">Rutinas</a>
                     </div>
                     <div class="col-md-6">
@@ -84,7 +312,8 @@
                     <a href="#" class="social-icon-small youtube" aria-label="YouTube de Rubarán Gym"></a>
                     <a href="#" class="social-icon-small flickr" aria-label="Flickr de Rubarán Gym"></a>
                     <a href="#" class="social-icon-small instagram" aria-label="Instagram de Rubarán Gym"></a>
-                    <a href="#" class="social-icon-small rss" aria-label="RSS de Rubarán Gym"></a>
+                    <!--
+                    <a href="#" class="social-icon-small rss" aria-label="RSS de Rubarán Gym"></a>  -->
                 </div>
             </div>
 
@@ -98,6 +327,7 @@
                     </a>
                     <p>Este sitio está bajo licencia CC BY 4.0</p>
                 </div>
+                <p><a href="aviso_Legal.html">Aviso legal y privacidad</a></p>
             </div>
 
         </div>
@@ -109,5 +339,4 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 </body>
-
 </html>

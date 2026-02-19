@@ -1,18 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Tarifas</title>
+  <meta charset="UTF-8">
+  <title>Tarifas – Rubarán Gym</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Consulta las tarifas de Rubarán Gym: mensualidades, bonos y servicios adicionales. Precios con IVA incluido.">
+
+  <!-- Fuente -->
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
 
   <!-- Favicon -->
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
-  <!-- Bootstrap CSS -->
+  <!-- Bootstrap -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
-  <!-- estilos CSS-->
+  <!-- Estilos -->
   <link href="css/styles2.css" rel="stylesheet">
 </head>
+
 <body>
 
 <header>
@@ -23,23 +30,63 @@
 
   <nav aria-label="Menú principal">
     <ul>
-      <li><a href="Rubaran.html">Inicio</a></li>
-      <li><a href="Rubaran.html#quienes-somos">Quiénes somos</a></li>
-      <li><a href="#">Rutinas</a></li>
-      <li><a href="#">Tarifas</a></li>
-      <li><a href="#l">Contacto</a></li>
-      <li><a href="cartel_inaguracion.html">Inaguración</a></li>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="index.html#titulo-quienes">Quiénes somos</a></li>
+      <li><a href="rutinas.html">Rutinas</a></li>
+      <li><a href="tarifas.html" class="activo">Tarifas</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+      <li><a href="cartel_inaguracion.html">Inauguración</a></li>
     </ul>
   </nav>
 </header>
 
-<main class="pagina-tarifas container" aria-labelledby="titulo-tarifas">
-  <h1 id="titulo-tarifas">Tarifas</h1>
-<!--
-  <p>Consulta nuestras tarifas y planes disponibles para entrenar en Rubarán Gym.</p>  -->
+
+
+<main class="pagina-tarifas">
+  <h1>Tarifas Rubarán Gym</h1>
+
+  <p class="intro-tarifas">Elige el plan que mejor se adapte a tus objetivos. Todos los precios incluyen IVA.</p>
+
+  <div class="row tarifas-contenedor">
+
+    <article class="col-sm-4 tarjeta-tarifa">
+      <h2>Mensual</h2>
+      <p class="precio">29,90 € / mes</p>
+      <ul>
+        <li>Acceso ilimitado</li>
+        <li>Zona de musculación</li>
+        <li>Clases dirigidas</li>
+        <li>Asesoramiento básico</li>
+      </ul>
+    </article>
+
+    <article class="col-sm-4 tarjeta-tarifa">
+      <h2>Trimestral</h2>
+      <p class="precio">79,90 € / trimestre</p>
+      <ul>
+        <li>Ahorra un 10%</li>
+        <li>Acceso ilimitado</li>
+        <li>Clases dirigidas</li>
+        <li>Plan de entrenamiento personalizado</li>
+      </ul>
+    </article>
+
+    <article class="col-sm-4 tarjeta-tarifa">
+      <h2>Anual</h2>
+      <p class="precio">299 € / año</p>
+      <ul>
+        <li>Ahorra un 20%</li>
+        <li>Acceso ilimitado</li>
+        <li>Clases dirigidas</li>
+        <li>Revisión mensual con entrenador</li>
+      </ul>
+    </article>
+
+  </div>
+
 </main>
 
-<footer role="contentinfo" aria-label="Información del pie de página" >
+<footer role="contentinfo" aria-label="Información del pie de página">
   <div class="container">
     <div class="row">
 
@@ -55,7 +102,7 @@
         <div class="row">
           <div class="col-md-6">
             <a href="index.html">Inicio</a>
-            <a href="Rubaran.html#quienes-somos">Quiénes somos</a>
+            <a href="index.html#quienes-somos">Quiénes somos</a>
             <a href="rutinas.html">Rutinas</a>
           </div>
           <div class="col-md-6">
@@ -69,17 +116,17 @@
       <div class="col-md-3 col-xs-12 social">
         <h3>Síguenos</h3>
         <div class="social-big">
-          <a href="#" class="social-icon twitter" aria-label="Twitter de Rubarán Gym"></a>
-          <a href="#" class="social-icon facebook"  aria-label="Facebook de Rubarán Gym"></a>
-          <a href="#" class="social-icon google-plus" aria-label="YouTube de Rubarán Gym"></a>
+          <a href="#" class="social-icon twitter"></a>
+          <a href="#" class="social-icon facebook"></a>
+          <a href="#" class="social-icon google-plus"></a>
         </div>
-
         <div class="social-small">
           <a href="#" class="social-icon-small vimeo" aria-label="Vimeo de Rubarán Gym" ></a>
           <a href="#" class="social-icon-small youtube" aria-label="YouTube de Rubarán Gym"></a>
           <a href="#" class="social-icon-small flickr" aria-label="Flickr de Rubarán Gym"></a>
           <a href="#" class="social-icon-small instagram" aria-label="Instagram de Rubarán Gym"></a>
-          <a href="#" class="social-icon-small rss" aria-label="RSS de Rubarán Gym"></a>
+          <!--
+          <a href="#" class="social-icon-small rss" aria-label="RSS de Rubarán Gym"></a>  -->
         </div>
       </div>
 
@@ -88,23 +135,22 @@
         <p>© 2026 Rubarán Gym</p>
 
         <div class="licencia">
-          <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener" aria-label="Licencia Creative Commons BY 4.0">
+          <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">
             <img src="images/cc-by.png" alt="Licencia Creative Commons BY 4.0" class="imagen-licencia">
           </a>
           <p>Este sitio está bajo licencia CC BY 4.0</p>
         </div>
+
+        <p><a href="aviso_Legal.html">Aviso legal y privacidad</a></p>
       </div>
 
     </div>
   </div>
 </footer>
 
-
-<!-- JS Bootstrap -->
+<!-- JS -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-
 </body>
-
 </html>
