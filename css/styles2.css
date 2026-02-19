@@ -6856,6 +6856,37 @@ VARIABLES GENERALES */
    VARIABLES DEL FOOTER
 ------------------------- */
 /*
+   VARIABLES PÁGINA RUTINAS
+----------------------------------------- */
+/* Colores específicos */
+/* Carrusel */
+/* Botones del carrusel */
+/* Secciones de ejercicios */
+/* Plan mensual */
+/* Vídeos */
+/*---------------------------
+VARIABLES  DE TARIFAS
+--------------------------------------*/
+/* Línea decorativa debajo de cada h2 */
+/* color del h2*/
+/* Estilos del H1 y P (idénticos a Inicio y Rutinas) */
+/* +++++++++++++++++++++++++++++++
+   VARIABLES ESPECÍFICAS CONTACTO
+   +++++++++++++++++++++++++++++++++++++ */
+/* Layout */
+/* Colores */
+/* Tamaños y pesos */
+/* Línea decorativa */
+/* Formulario */
+/* Botón */
+/*+++++++++++++++++++++++++++++++
+VARIABLES PAGINA AVISO-LEGAL
+ ++++++++++++++++++++++++++++++++++++*/
+/* Layout */
+/* Colores */
+/* Tipografías y tamaños */
+/* Línea decorativa */
+/*
    ESTILOS GLOBALES DE LA WEB
 ------------------------------- */
 /* Establece la tipografía, colores y comportamiento general del documento */
@@ -7090,7 +7121,6 @@ header h1 {
 /*
    IMAGEN PRINCIPAL
 --------------------*/
-/* IMAGEN PRINCIPAL */
 .imagenPrincipal {
   background-image: url('../images/hombresEntrenando.png');
   background-size: cover;
@@ -7147,15 +7177,16 @@ header h1 {
   background-attachment: fixed;
   position: relative;
   padding: 80px 20px;
-  color: white;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  color: #FFFFFF;
+  /*  tono de gris más oscuro */
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   line-height: 1.8;
 }
 .quienesSomos::before {
   content: '';
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   z-index: 0;
 }
 .quienesSomos > * {
@@ -7391,6 +7422,7 @@ footer {
 }
 footer .container {
   padding: 30px 0;
+  /* SOLO AJUSTE DE LA COLUMNA DEL LOGO */
 }
 footer .container h3 {
   border-bottom: 1px solid #0073e6;
@@ -7462,51 +7494,51 @@ footer .container .social .rss {
   background-position: -112px 0;
 }
 footer .container .footer-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
   text-align: center;
-  margin-top: 20px;
-  font-size: 12px;
+  margin-top: 10px;
+  /* LICENCIA */
 }
-footer .container .footer-logo img.logo-rubaran {
-  width: 100px;
-  height: 100px;
+footer .container .footer-logo .logo-rubaran {
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 footer .container .footer-logo p {
-  margin-top: 5px;
+  margin: 0;
   font-size: 12px;
   color: #e0e0e0;
-  text-align: center;
 }
 footer .container .footer-logo a {
-  text-decoration: none;
   color: #e0e0e0;
+  text-decoration: none;
 }
 footer .container .footer-logo a:hover {
   color: #ffffff;
   text-decoration: underline;
 }
-footer .container .footer-logo .footer-logo .licencia {
+footer .container .footer-logo .licencia {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 8px;
-  margin-top: 10px;
+  gap: 5px;
+  margin-top: 5px;
 }
-footer .container .footer-logo .footer-logo .licencia p {
-  font-size: 12px;
-  margin: 0;
-  line-height: 1;
-  color: #e0e0e0;
-  white-space: nowrap;
-}
-footer .container .footer-logo .imagen-licencia {
+footer .container .footer-logo .licencia .imagen-licencia {
   width: 40px;
   height: auto;
-  margin: 0;
-  border-radius: 0;
   filter: brightness(1.1);
+}
+footer .container .footer-logo .licencia p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.2;
+  white-space: nowrap;
 }
 /* FOOTER RESPONSIVE
 ----------------------*/
@@ -7564,10 +7596,14 @@ PARA MOVILES MUY PEQUEÑOS
     width: 32px;
   }
 }
+/*++++++++++++++++++++++++
+++++++++++++++++++++++++++
+PÁGINAS SECUNDARIAS
++++++++++++++++++++++++++
++++++++++++++++++++++++++++*/
 /*
 CARTEL INAGURACIÓN- ESTILOS
 ---------------------------*/
-/* CARTEL INAUGURACIÓN – ESTILOS */
 .pagina-cartel {
   max-width: 960px;
   margin: 40px auto;
@@ -7576,10 +7612,11 @@ CARTEL INAGURACIÓN- ESTILOS
   background-color: #f5faff;
 }
 .pagina-cartel h1 {
-  font-size: 28px;
+  font-size: 38px;
   font-family: 'Oswald', sans-serif;
   margin-bottom: 10px;
   color: #003366;
+  font-weight: 800;
 }
 .pagina-cartel p {
   font-size: 16px;
@@ -7607,4 +7644,563 @@ CARTEL INAGURACIÓN- ESTILOS
   align-items: center;
   justify-content: center;
   padding: 20px;
+}
+/* +++++++++++++++++++++++++++++++++++++++++++++++++
+   ESTILOS PÁGINA RUTINAS
+-+++++++++++++++++++++++++++++++++++++++++++++++++ */
+/*
+   1. ESTILOS GENERALES DE LA PÁGINA
+--------------------------------------- */
+.pagina-rutinas {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  color: #333;
+}
+.pagina-rutinas h1,
+.pagina-rutinas h2,
+.pagina-rutinas h3 {
+  font-family: 'Oswald', sans-serif;
+  color: #003366;
+}
+.pagina-rutinas h1 {
+  font-weight: 800;
+}
+.pagina-rutinas p,
+.pagina-rutinas li {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+/* ------------------------------------------------------------
+   2. CARRUSEL DE CATEGORÍAS
+------------------------------------------------------------- */
+#carruselCategorias {
+  margin-bottom: 80px;
+  /* Flechas del carrusel */
+}
+#carruselCategorias .item {
+  text-align: center;
+  padding: 20px;
+}
+#carruselCategorias .item img {
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  max-height: 350px;
+  object-fit: cover;
+}
+#carruselCategorias .item h3 {
+  margin-top: 15px;
+  color: #003366;
+}
+#carruselCategorias .item p {
+  margin-bottom: 15px;
+}
+#carruselCategorias .item .btn {
+  background: #003366;
+  border: none;
+  color: #ffffff;
+}
+#carruselCategorias .item .btn:hover {
+  background: #001933;
+}
+#carruselCategorias .carousel-control {
+  background: none;
+}
+#carruselCategorias .carousel-control span {
+  color: #003366;
+  font-size: 30px;
+}
+/* ------------------------------------------------------------
+   3. SECCIONES DE EJERCICIOS POR CATEGORIAS
+------------------------------------------------------------- */
+/* ----- CONTENEDOR GENERAL DE LA SECCIÓN ----- */
+.ejercicios-categorias {
+  padding: 80px 20px;
+  text-align: center;
+}
+/* ----- TÍTULO PRINCIPAL DE LA SECCIÓN ----- */
+.titulo-ejercicios {
+  font-size: 2.4rem;
+  color: #003366;
+  margin-bottom: 20px;
+  position: relative;
+}
+/* Línea decorativa debajo del título (igual que en Servicios, Instalaciones, etc.) */
+.titulo-ejercicios::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #003366;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+/* ----- PÁRRAFO INTRODUCTORIO ----- */
+.intro-ejercicios {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 40px;
+}
+/* ----- CONTENEDOR DE TARJETAS ----- */
+.contenedor-ejercicios {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+/* ============================================================
+   TARJETAS INDIVIDUALES DE EJERCICIOS
+   Cada categoría (Fuerza, Tren Superior, etc.)
+=============================================================== */
+.tarjeta-ejercicio {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 350px;
+  text-align: left;
+}
+/* ----- TÍTULO DE CADA TARJETA ----- */
+.tarjeta-ejercicio h3 {
+  color: #003366;
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  font-family: 'Oswald', sans-serif;
+}
+/* ----- LISTA DE EJERCICIOS ----- */
+.tarjeta-ejercicio ul {
+  list-style: none;
+  padding-left: 0;
+}
+.tarjeta-ejercicio li {
+  margin-bottom: 8px;
+  color: #333;
+  font-size: 1.2rem;
+}
+/* ----- RESPONSIVE ----- */
+@media (max-width: 600px) {
+  .tarjeta-ejercicio {
+    max-width: 100%;
+  }
+}
+/* ------------------------------------------------------------
+   4. PLAN MENSUAL
+------------------------------------------------------------- */
+#plan-mensual {
+  padding: 80px 20px;
+  text-align: center;
+  /* Línea decorativa debajo del título */
+  /* ----- TARJETAS DE CADA SEMANA ----- */
+}
+#plan-mensual h2 {
+  font-size: 2.4rem;
+  color: #003366;
+  margin-bottom: 30px;
+  position: relative;
+}
+#plan-mensual h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #003366;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+#plan-mensual article {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
+  text-align: left;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#plan-mensual article h3 {
+  color: #003366;
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  font-family: 'Oswald', sans-serif;
+}
+#plan-mensual article ul {
+  list-style: none;
+  padding-left: 0;
+}
+#plan-mensual article ul li {
+  margin-bottom: 8px;
+  color: #333;
+  font-size: 1.2rem;
+}
+/* -----------------------------------
+   RESPONSIVE (Ajustes para pantallas pequeñas)
+---------------------------------------------------*/
+@media (max-width: 768px) {
+  #plan-mensual {
+    padding: 40px 20px;
+  }
+  #plan-mensual article {
+    padding: 20px;
+    max-width: 100%;
+  }
+  #plan-mensual article h3 {
+    font-size: 1.2rem;
+  }
+  #plan-mensual article ul li {
+    font-size: 1.1rem;
+  }
+}
+/* ------------------------------------------------------------
+   5. VÍDEOS DE TÉCNICA
+------------------------------------------------------------- */
+#titulo-videos {
+  margin-top: 80px;
+  font-size: 2.4rem;
+  color: #003366;
+  position: relative;
+}
+/* Línea decorativa debajo del título */
+#titulo-videos::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #003366;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+.intro-videos {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 1.1rem;
+  color: #333;
+}
+/* ----- TARJETAS DE VÍDEO ----- */
+/* CONTENEDOR DE FILAS DE VÍDEOS  USAMOS FLEX  */
+section[aria-labelledby="titulo-videos"] .row {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+/* CADA TARJETA DE VÍDEO */
+section[aria-labelledby="titulo-videos"] article.col-sm-6 {
+  float: none;
+  width: auto;
+  flex: 1 1 320px;
+  max-width: 400px;
+}
+/* ESTILO DE LA TARJETA (lo que ya tenías, ajustado) */
+section[aria-labelledby="titulo-videos"] article {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+/* RESPONSIVE: EN MÓVIL UNA POR FILA */
+@media (max-width: 768px) {
+  section[aria-labelledby="titulo-videos"] .row {
+    gap: 20px;
+  }
+  section[aria-labelledby="titulo-videos"] article.col-sm-6 {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+/* -----------------------
+   ESTILOS PÁGINA TARIFAS
+   ------------------------------- */
+.pagina-tarifas {
+  padding: 40px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+  /* TÍTULO PRINCIPAL (igual que Inicio y Rutinas) */
+  /* PÁRRAFO INTRODUCTORIO (igual que Inicio y Rutinas) */
+  /* CONTENEDOR DE TARJETAS */
+  /* TARJETA INDIVIDUAL */
+}
+.pagina-tarifas h1 {
+  text-align: center;
+  color: #003366;
+  font-weight: 800;
+  font-family: 'Oswald', sans-serif;
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+.pagina-tarifas .intro-tarifas {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 40px;
+}
+.pagina-tarifas .tarifas-contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.pagina-tarifas .tarjeta-tarifa {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  /* TÍTULO DE CADA TARIFA */
+  /* PRECIO */
+  /* LISTA DE CARACTERÍSTICAS */
+}
+.pagina-tarifas .tarjeta-tarifa:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+.pagina-tarifas .tarjeta-tarifa h2 {
+  font-family: 'Oswald', sans-serif;
+  color: #003366;
+  font-weight: 700;
+  font-size: 1.9rem;
+  margin-bottom: 10px;
+  position: relative;
+  /* LÍNEA DECORATIVA */
+}
+.pagina-tarifas .tarjeta-tarifa h2::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #003366;
+  margin: 10px auto 20px auto;
+  border-radius: 2px;
+}
+.pagina-tarifas .tarjeta-tarifa .precio {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #003366;
+  margin-bottom: 20px;
+}
+.pagina-tarifas .tarjeta-tarifa ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.pagina-tarifas .tarjeta-tarifa ul li {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 1rem;
+  color: #333;
+}
+.pagina-tarifas .tarjeta-tarifa ul li:last-child {
+  border-bottom: none;
+}
+/*++++++++++++++++++++++++++++
+   ESTILOS PÁGINA CONTACTO
+  +++++++++++++++++++++++++++++++++ */
+.pagina-contacto {
+  padding: 40px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+  /* TÍTULO PRINCIPAL */
+  /* PÁRRAFO INTRODUCTORIO */
+  /* CONTENEDOR PRINCIPAL */
+  /* FORMULARIO */
+  /* INFORMACIÓN DE CONTACTO */
+}
+.pagina-contacto h1 {
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  font-weight: 800;
+  color: #003366;
+}
+.pagina-contacto .intro-contacto {
+  text-align: center;
+  font-size: 1.3rem;
+  color: #333;
+  margin-bottom: 40px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.pagina-contacto .contacto-contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+.pagina-contacto .formulario-contacto {
+  flex: 1 1 450px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.pagina-contacto .formulario-contacto h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: #003366;
+  position: relative;
+}
+.pagina-contacto .formulario-contacto h2::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #003366;
+  margin: 10px 0 20px 0;
+  border-radius: 2px;
+}
+.pagina-contacto .formulario-contacto label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #003366;
+}
+.pagina-contacto .formulario-contacto input,
+.pagina-contacto .formulario-contacto textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+.pagina-contacto .formulario-contacto input:focus,
+.pagina-contacto .formulario-contacto textarea:focus {
+  border-color: #003366;
+  outline: none;
+}
+.pagina-contacto .formulario-contacto textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+.pagina-contacto .formulario-contacto button {
+  width: 100%;
+  padding: 12px;
+  background: #003366;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.pagina-contacto .formulario-contacto button:hover {
+  background: #001933;
+}
+.pagina-contacto .info-contacto {
+  flex: 1 1 300px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.pagina-contacto .info-contacto h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.9rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #003366;
+  position: relative;
+}
+.pagina-contacto .info-contacto h2::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #003366;
+  margin: 10px auto 20px auto;
+  border-radius: 2px;
+}
+.pagina-contacto .info-contacto h3 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.4rem;
+  margin-top: 20px;
+  color: #003366;
+  position: relative;
+}
+.pagina-contacto .info-contacto h3::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 3px;
+  background: #003366;
+  margin: 8px auto 15px auto;
+  border-radius: 2px;
+}
+.pagina-contacto .info-contacto p {
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 1.3rem;
+}
+/* ++++++++++++++++++++++++++++++++
+   ESTILOS PÁGINA AVISO LEGAL
+   ++++++++++++++++++++++++++++++++++++++ */
+.pagina-legal {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  /* TÍTULO PRINCIPAL */
+  /* PÁRRAFO INTRODUCTORIO */
+  /* TARJETAS DE SECCIÓN */
+}
+.pagina-legal h1 {
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #003366;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+.pagina-legal h1::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #003366;
+  margin: 10px auto 30px auto;
+  border-radius: 2px;
+}
+.pagina-legal .intro-legal {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+  line-height: 1.6;
+}
+.pagina-legal section {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+.pagina-legal section h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #003366;
+  margin-bottom: 10px;
+  position: relative;
+}
+.pagina-legal section p {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+.pagina-legal section strong {
+  color: #003366;
 }
